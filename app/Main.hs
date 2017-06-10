@@ -121,4 +121,5 @@ main = do
     hSetBuffering stdin LineBuffering
     clearScreen
     setCursorPosition 0 0
+    putStrLn "--- Welcome to Todo List, in Haskell v0.0.1, type 'help' for help ---"
     void $ runStateT indefiniteParse ([""] :: TodoList)
